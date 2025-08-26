@@ -1,0 +1,12 @@
+langchain
+langchain_community
+streamlit
+geocoder
+requests
+python-dotenv
+plotly
+pandas
+langchain_ollama
+elevenlabs
+faiss-cpu
+pypdf
