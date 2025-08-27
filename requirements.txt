@@ -7,6 +7,6 @@ python-dotenv
 plotly
 pandas
 langchain_ollama
-elevenlabs
+speechify-api
 faiss-cpu
 pypdf
