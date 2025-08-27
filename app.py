@@ -35,16 +35,17 @@ col1, col2 = st.columns([ 1, 1], gap="medium")
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/1779/1779940.png", width=100)
     st.header("🔧 Voice Settings")
-    voice_option = st.selectbox("🗣️ Choose Voice", ("Rachel", "Bella", "Antoni", "Daniel"))
+    voice_option = st.selectbox("🗣️ Choose Voice", ("Scott", "Rachel", "Bella", "Antoni", "Daniel"))
     voice_map = {
-        "Rachel": "21m00Tcm4TlvDq8ikWAM",
-        "Bella": "EXAVITQu4vr4xnSDxMaL",
-        "Antoni": "AZnzlk1XvdvUeBnXmlld",
-        "Daniel": "IKne3meq5aSn9XLyUdCD"
+        "Scott": "scott",
+        "Rachel": "21m00Tcm4TlvDq8ikWAM",  # Backward compatibility
+        "Bella": "EXAVITQu4vr4xnSDxMaL",   # Backward compatibility
+        "Antoni": "AZnzlk1XvdvUeBnXmlld",  # Backward compatibility
+        "Daniel": "IKne3meq5aSn9XLyUdCD"   # Backward compatibility
     }
     selected_voice_id = voice_map[voice_option]
     st.session_state.last_voice_id = selected_voice_id
-    st.caption("🌍 Powered by ElevenLabs")
+    st.caption("🌍 Powered by Speechify")
 
 # --------------------------
 # 🧾 Current Weather Section
